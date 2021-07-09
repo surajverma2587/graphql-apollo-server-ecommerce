@@ -1,5 +1,6 @@
 const productsData = [
   {
+    id: "95754178-e09f-11eb-ba80-0242ac130004",
     name: "Plain T-Shirt",
     price: 14.99,
     stock: 14,
@@ -19,6 +20,7 @@ const productsData = [
     ],
   },
   {
+    id: "95754632-e09f-11eb-ba80-0242ac130004",
     name: "Running Sneakers",
     price: 90.0,
     stock: 25,
@@ -34,6 +36,7 @@ const productsData = [
     ],
   },
   {
+    id: "95754736-e09f-11eb-ba80-0242ac130004",
     name: "Branded Baseball Hat",
     price: 22.99,
     stock: 12,
@@ -53,6 +56,7 @@ const productsData = [
     ],
   },
   {
+    id: "95754808-e09f-11eb-ba80-0242ac130004",
     name: "Top 40 Music Compilation Vinyl Record",
     price: 12.99,
     stock: 50,
@@ -72,6 +76,7 @@ const productsData = [
     ],
   },
   {
+    id: "957548c6-e09f-11eb-ba80-0242ac130004",
     name: "Cargo Shorts",
     price: 29.99,
     stock: 22,
