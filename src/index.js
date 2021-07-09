@@ -3,6 +3,8 @@ const { ApolloServer, makeExecutableSchema } = require("apollo-server");
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 
+const { connect } = require("./db");
+
 let server;
 
 const schema = makeExecutableSchema({
@@ -33,9 +35,10 @@ const createApolloServer = () => {
 
 createApolloServer()
   .listen()
-  .then(({ url }) => {
+  .then(async ({ url }) => {
+    await connect();
     console.log(`🚀  Server ready at ${url}`);
   })
   .catch((error) => {
-    console.log(`🚀  Error: ${error.message}`);
+    console.log(`💥  Error: ${error.message}`);
   });
